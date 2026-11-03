@@ -1,5 +1,9 @@
 #  "ChronosMatch": Zero-Copy High-Frequency Trading Engine 
-#   Domain: FinTech & Low-Latency Systems 
+Team: Team Spark
+Organization / Program: Infotact Solutions - Python Development Internship
+Project Window: 10 October 2026 – 10 November 2026
+Systems & Integration Lead: Umeshwari 
+
 1. Project Overview
 ChronosMatch is an educational low-latency trading-engine prototype. Order events move between processes as **fixed-width 48-byte binary records** in a **memory-mapped single-producer / single-consumer (SPSC) ring buffer**, so no JSON or Pickle serialization is used on the event path. A matching engine consumes the events and a terminal monitor shows activity live.
 
