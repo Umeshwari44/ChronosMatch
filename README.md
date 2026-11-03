@@ -7,7 +7,7 @@ Systems & Integration Lead: Umeshwari
 1. Project Overview
 ChronosMatch is an educational low-latency trading-engine prototype. Order events move between processes as **fixed-width 48-byte binary records** in a **memory-mapped single-producer / single-consumer (SPSC) ring buffer**, so no JSON or Pickle serialization is used on the event path. A matching engine consumes the events and a terminal monitor shows activity live.
 
-2. Repository Layout
+## 2. Repository Layout
 ChronosMatch/
 ├── README.md                     # Overview, layout, setup and results summary
 ├── requirements.txt              # Cython, setuptools, pytest
