@@ -1,5 +1,3 @@
-
-```
 ChronosMatch/
 ├── README.md                     # Overview, layout, setup and results summary
 ├── requirements.txt              # Cython, setuptools, pytest
@@ -24,4 +22,3 @@ ChronosMatch/
     ├── test_record.py            # Record format, checksum and validation rules
     ├── test_ring.py              # FIFO, wrap-around, backpressure, reopen checks
     └── test_matcher.py           # Matching, partial fills, resting orders
-```
