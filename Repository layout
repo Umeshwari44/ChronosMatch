@@ -1,0 +1,27 @@
+
+```
+ChronosMatch/
+├── README.md                     # Overview, layout, setup and results summary
+├── requirements.txt              # Cython, setuptools, pytest
+├── setup.py                      # Builds the Cython matcher extension
+├── .gitignore
+├── docs/
+│   ├── protocol.md               # 48-byte record and ring-buffer specification
+│   └── benchmark-results.md      # Measured benchmark results and hardware
+├── chronosmatch/
+│   ├── __init__.py               # Package marker (v0.1.0)
+│   ├── record.py                 # Encode, decode and validate 48-byte records
+│   ├── ring.py                   # Memory-mapped SPSC ring buffer
+│   ├── matching_engine.pyx       # Cython top-of-book matcher
+│   ├── matcher_py.py             # Pure-Python reference matcher / fallback
+│   ├── simulator.py              # asyncio synthetic order producer
+│   ├── consumer.py               # Reads the ring and feeds the matcher
+│   └── monitor.py                # curses ring-buffer monitor
+├── tools/
+│   ├── bench_ipc.py              # Two-process IPC throughput / latency benchmark
+│   └── verify_matcher.py         # Crossing-order check for the matcher
+└── tests/
+    ├── test_record.py            # Record format, checksum and validation rules
+    ├── test_ring.py              # FIFO, wrap-around, backpressure, reopen checks
+    └── test_matcher.py           # Matching, partial fills, resting orders
+```
