@@ -1,0 +1,5 @@
+Cython>=3.0
+setuptools>=68
+pytest>=7
+# Windows-only terminal dashboard support (install on Windows if curses is unavailable):
+# windows-curses>=2.3

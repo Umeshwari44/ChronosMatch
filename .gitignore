@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+*.egg-info/
+*.so
+*.pyd
+chronosmatch/matching_engine.c
+*.ipc
+.pytest_cache/
+*.db
+*.db-shm
+*.db-wal
+
+__pycache__/
